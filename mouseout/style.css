@@ -1,0 +1,17 @@
+/* scroll */
+body { 
+    height: 2000px; /* Just to make the page scrollable */
+} 
+
+header { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background-color: lightblue; 
+    transition: background-color 0.3s; 
+}
+
+.scrolled { 
+    background-color: lightcoral;
+}
