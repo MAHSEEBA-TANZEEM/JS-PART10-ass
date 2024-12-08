@@ -1,6 +1,7 @@
-let inp = document.querySelector("input");
+const nameInput = document.getElementById("nameInput");
+const nameDisplay = document.getElementById("nameDisplay");
 
-inp.addEventListener("input",()=> {
-    h2 = document.querySelector("h2");
-    h2.innerText = inp.value;
-})
+nameInput.addEventListener("input",()=> {
+    let filteredName = nameInput.value.replace(/[^a-zA-Z\s]/g,"");
+    nameDisplay.innerText = filteredName;
+});
